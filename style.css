@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#gameModeSelection {
+    margin-bottom: 20px;
+}
+/* ... (rest of your CSS above) */
+
+#gameModeSelection {
+    margin-bottom: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+}
+
+/* ... (existing CSS) ... */
+
+#gameModeSelection, #resetButton {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+    background-color: darkgray;
+}
+
+#gameModeSelection button:nth-child(1) {
+    background-color: #3498db;
+    color: white;
+}
+
+#gameModeSelection button:nth-child(2) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#resetButton {
+    background-color: #2ecc71;
+    color: white;
+}
